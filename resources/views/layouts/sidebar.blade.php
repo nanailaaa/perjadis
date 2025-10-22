@@ -1,19 +1,17 @@
 <aside class="left-sidebar">
   <div>
-    <h3 style="color: blue; text-align: center;">SIJADIS XVI</h3>
     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
       <i class="ti ti-x fs-6"></i>
     </div>
-  
+
     <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
       <ul id="sidebarnav">
+        <!-- Menu Utama -->
         <li class="nav-small-cap">
-          <i class="ti ti-dots"></i>
-          <span class="hide-menu">Menu Utama</span>
         </li>
-        
+
         <li class="sidebar-item">
-          <a class="sidebar-link active" href="#">
+          <a class="sidebar-link active" href="{{ url('/') }}">
             <i class="ti ti-home"></i>
             <span class="hide-menu">Dashboard</span>
           </a>
@@ -29,7 +27,7 @@
           </a>
           <ul aria-expanded="false" class="collapse first-level">
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="{{ route("master.pegawai") }}">
                 <div class="d-flex align-items-center gap-3">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-users"></i>
@@ -39,7 +37,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="{{ route("master.tim") }}">
                 <div class="d-flex align-items-center gap-3">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-user-check"></i>
@@ -49,7 +47,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="{{ route("master.transportasi") }}">
                 <div class="d-flex align-items-center gap-3">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-car"></i>
@@ -60,7 +58,7 @@
             </li>
           </ul>
         </li>
-        
+
         <!-- Perjalanan Dinas -->
         <li class="sidebar-item">
           <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
@@ -71,7 +69,7 @@
           </a>
           <ul aria-expanded="false" class="collapse first-level">
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="{{ url('/perjalanan') }}">
                 <div class="d-flex align-items-center gap-3">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-circle"></i>
@@ -81,7 +79,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" >
                 <div class="d-flex align-items-center gap-3">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-circle"></i>
@@ -94,20 +92,15 @@
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link" href="#">
+          <a class="sidebar-link" href="{{ url('/laporan') }}">
             <i class="ti ti-chart-bar"></i>
             <span class="hide-menu">Laporan</span>
           </a>
         </li>
 
         <li><span class="sidebar-divider lg"></span></li>
-        
-        <li class="sidebar-item">
-          <a class="sidebar-link" href="#">
-            <i class="ti ti-logout"></i>
-            <span class="hide-menu">Logout</span>
-          </a>
-        </li>
+
+
       </ul>
     </nav>
   </div>

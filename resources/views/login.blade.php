@@ -7,7 +7,7 @@
   <title>Login</title>
   <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="./assets/css/styles.min.css" />
-  
+
 </head>
 
 
@@ -26,8 +26,8 @@
                 <form method="POST" action="{{route('login.post')}}">
                     @csrf
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">email</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Masukkan email">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="Masukkan email">
                     @error('email')
              <small class="text-danger">{{ $message }}</small>
                 @enderror
